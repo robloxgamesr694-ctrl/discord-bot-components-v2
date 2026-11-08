@@ -6,7 +6,7 @@ import "./constants.js";
 const optional = z.string().trim().optional().transform(value => value || undefined);
 
 export const env = await validateEnv(z.looseObject({
-    BOT_TOKEN: z.string("Discord Bot Token is required").min(1),
+    BOT_TOKEN: z.string(MTU2Mzk4NDY2Nzg2MDc5OTYyOA.Gr5VcT.CRdIVMmeeQv9OW1XOAH6Li2yS3kdILbRwjEwqM").min(1),
     WEBHOOK_LOGS_URL: z.union([z.url(), z.literal("")]).optional().transform(value => value || undefined),
     GUILD_ID: optional,
     MOD_LOG_CHANNEL_ID: optional,
